@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&family=Anton&family=Archivo+Black&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: none;
+    /* Hide default cursor */
+  }
+
+  /* Ensure default cursor is hidden on interactive elements too */
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: none;
+  }
+}
+
+@layer components {
+
+  /* Vinyl Record Custom Cursor */
+  .cursor-vinyl {
+    @apply relative w-8 h-8 rounded-full pointer-events-none z-[9999] flex items-center justify-center transition-all duration-300 ease-out;
+    background: radial-gradient(circle at center, #000 0%, #111 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Vinyl Grooves - using pseudo-element to keep the spin smooth */
+  .cursor-vinyl::before {
+    content: '';
+    @apply absolute inset-0 rounded-full w-full h-full;
+    background: repeating-radial-gradient(#222 0,
+        #222 1px,
+        transparent 2px,
+        transparent 3px);
+    opacity: 0.6;
+  }
+
+  /* Center Label */
+  .cursor-vinyl::after {
+    content: '';
+    @apply absolute w-3 h-3 bg-brand-gold rounded-full transition-colors duration-300;
+  }
+
+  /* Hover State - Scale Up & Spin Faster */
+  .cursor-vinyl.hover {
+    @apply w-16 h-16;
+  }
+
+  .cursor-vinyl.hover::after {
+    @apply w-6 h-6 bg-brand-red;
+    /* Label changes color on hover */
+  }
+
+  /* Rotation Animation Class */
+  .animate-spin-slow {
+    animation: spin 4s linear infinite;
+  }
+
+  .animate-spin-fast {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Override the transform in keyframes to include the translation needed for centering */
+  /* Actually, better to separate rotation wrapper from position wrapper to avoid transform conflicts */
+
+  /* Section Divider */
+  .section-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent;
+  }
+
+  /* Grid Pattern Background */
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Noise Background */
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+  }
+
+  /* Brutal Button Style */
+  .btn-brutal {
+    @apply flex items-center gap-3 px-6 py-3 border-2 font-mono text-sm uppercase tracking-widest transition-all duration-300;
+  }
+
+  .btn-brutal:hover {
+    @apply shadow-[4px_4px_0_0_rgba(255, 255, 255, 0.3)];
+  }
+
+  /* Glass Card */
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg;
+  }
+
+  /* Text Effects */
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent;
+  }
+
+  .text-outline-hover:hover {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+    color: transparent;
+  }
+
+  /* Hero Text Size */
+  .text-hero {
+    font-size: clamp(3rem, 12vw, 12rem);
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+
+  /* Glitch Effect */
+  .glitch {
+    position: relative;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00ff;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+  }
+
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #00ffff;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+  }
+
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(42px, 9999px, 44px, 0);
+    }
+
+    5% {
+      clip: rect(12px, 9999px, 59px, 0);
+    }
+
+    10% {
+      clip: rect(48px, 9999px, 29px, 0);
+    }
+
+    15% {
+      clip: rect(42px, 9999px, 73px, 0);
+    }
+
+    20% {
+      clip: rect(63px, 9999px, 27px, 0);
+    }
+
+    25% {
+      clip: rect(34px, 9999px, 55px, 0);
+    }
+
+    30% {
+      clip: rect(86px, 9999px, 73px, 0);
+    }
+
+    35% {
+      clip: rect(20px, 9999px, 20px, 0);
+    }
+
+    40% {
+      clip: rect(26px, 9999px, 60px, 0);
+    }
+
+    45% {
+      clip: rect(25px, 9999px, 66px, 0);
+    }
+
+    50% {
+      clip: rect(57px, 9999px, 98px, 0);
+    }
+
+    55% {
+      clip: rect(5px, 9999px, 46px, 0);
+    }
+
+    60% {
+      clip: rect(82px, 9999px, 31px, 0);
+    }
+
+    65% {
+      clip: rect(54px, 9999px, 27px, 0);
+    }
+
+    70% {
+      clip: rect(28px, 9999px, 99px, 0);
+    }
+
+    75% {
+      clip: rect(45px, 9999px, 69px, 0);
+    }
+
+    80% {
+      clip: rect(23px, 9999px, 85px, 0);
+    }
+
+    85% {
+      clip: rect(54px, 9999px, 84px, 0);
+    }
+
+    90% {
+      clip: rect(45px, 9999px, 47px, 0);
+    }
+
+    95% {
+      clip: rect(37px, 9999px, 20px, 0);
+    }
+
+    100% {
+      clip: rect(4px, 9999px, 91px, 0);
+    }
+  }
+
+  @keyframes glitch-anim-2 {
+    0% {
+      clip: rect(65px, 9999px, 100px, 0);
+    }
+
+    5% {
+      clip: rect(52px, 9999px, 74px, 0);
+    }
+
+    10% {
+      clip: rect(79px, 9999px, 85px, 0);
+    }
+
+    15% {
+      clip: rect(75px, 9999px, 5px, 0);
+    }
+
+    20% {
+      clip: rect(67px, 9999px, 61px, 0);
+    }
+
+    25% {
+      clip: rect(14px, 9999px, 79px, 0);
+    }
+
+    30% {
+      clip: rect(1px, 9999px, 66px, 0);
+    }
+
+    35% {
+      clip: rect(86px, 9999px, 30px, 0);
+    }
+
+    40% {
+      clip: rect(23px, 9999px, 98px, 0);
+    }
+
+    45% {
+      clip: rect(85px, 9999px, 72px, 0);
+    }
+
+    50% {
+      clip: rect(71px, 9999px, 75px, 0);
+    }
+
+    55% {
+      clip: rect(2px, 9999px, 48px, 0);
+    }
+
+    60% {
+      clip: rect(30px, 9999px, 16px, 0);
+    }
+
+    65% {
+      clip: rect(59px, 9999px, 50px, 0);
+    }
+
+    70% {
+      clip: rect(41px, 9999px, 62px, 0);
+    }
+
+    75% {
+      clip: rect(2px, 9999px, 82px, 0);
+    }
+
+    80% {
+      clip: rect(47px, 9999px, 73px, 0);
+    }
+
+    85% {
+      clip: rect(3px, 9999px, 27px, 0);
+    }
+
+    90% {
+      clip: rect(26px, 9999px, 55px, 0);
+    }
+
+    95% {
+      clip: rect(42px, 9999px, 97px, 0);
+    }
+
+    100% {
+      clip: rect(38px, 9999px, 49px, 0);
+    }
+  }
+}
+
+@layer utilities {
+
+  /* Animation Utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Selection Color */
+  ::selection {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+}
+
+/* Tailwind config updated: 2026-02-01 */
