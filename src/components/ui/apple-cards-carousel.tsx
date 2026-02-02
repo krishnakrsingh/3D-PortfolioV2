@@ -70,7 +70,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
     const handleCardClose = (index: number) => {
         if (carouselRef.current) {
-            const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
+            const cardWidth = isMobile() ? 280 : 384; // (md:w-96)
             const gap = isMobile() ? 4 : 8;
             const scrollPosition = (cardWidth + gap) * (index + 1);
             carouselRef.current.scrollTo({
@@ -130,7 +130,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                         ))}
                     </div>
                 </div>
-                <div className="mr-10 flex justify-end gap-2">
+                <div className="mr-4 md:mr-10 flex justify-end gap-2">
                     <button
                         className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
                         onClick={scrollLeft}
@@ -237,7 +237,7 @@ export const Card = ({
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
                 onClick={handleOpen}
-                className="relative z-10 flex h-[246px] w-[246px] flex-col items-start justify-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900/50 backdrop-blur-sm md:h-[310px] md:w-[310px] hover:border-brand-gold/50 transition-colors duration-300 group"
+                className="relative z-10 flex h-[320px] w-[280px] flex-col items-start justify-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900/50 backdrop-blur-sm md:h-[310px] md:w-[310px] hover:border-brand-gold/50 transition-colors duration-300 group"
             >
                 <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/80 via-black/20 to-transparent" />
                 <div className="relative z-40 p-6 flex flex-col h-full justify-between">
