@@ -213,7 +213,7 @@ const cards = [
         title: "XBionics",
         src: "/assets/human_machine.png",
         ctaText: "View Project",
-        ctaLink: "https://github.com/krishnakrsingh?tab=repositories",
+        ctaLink: "https://github.com/krishnakrsingh",
         content: () => {
             return (
                 <div>
@@ -238,7 +238,7 @@ const cards = [
         title: "BlackESP",
         src: "/assets/blackesp_device.png",
         ctaText: "View Project",
-        ctaLink: "https://github.com/krishnakrsingh?tab=repositories",
+        ctaLink: "https://github.com/krishnakrsingh",
         content: () => {
             return (
                 <div>
@@ -263,7 +263,7 @@ const cards = [
         title: "FinalRound",
         src: "/assets/finalround.png",
         ctaText: "View Project",
-        ctaLink: "https://github.com/krishnakrsingh?tab=repositories",
+        ctaLink: "https://github.com/krishnakrsingh",
         content: () => {
             return (
                 <div>
@@ -288,7 +288,7 @@ const cards = [
         title: "XR-01",
         src: "/assets/coming_soon.png",
         ctaText: "View Project",
-        ctaLink: "https://github.com/krishnakrsingh?tab=repositories",
+        ctaLink: "https://github.com/krishnakrsingh",
         content: () => {
             return (
                 <div>
@@ -314,7 +314,7 @@ const cards = [
         title: "Rapid Prototyping",
         src: "/assets/rapid_labs.jpg",
         ctaText: "View Project",
-        ctaLink: "https://github.com/krishnakrsingh?tab=repositories",
+        ctaLink: "https://github.com/krishnakrsingh",
         content: () => {
             return (
                 <div>
