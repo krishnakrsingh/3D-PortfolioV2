@@ -68,7 +68,7 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
 
 
             {/* Header / Nav */}
-            <div className="relative z-10 flex justify-between items-center w-full shrink-0 mb-8">
+            <div className="relative z-10 flex justify-between items-end w-full shrink-0 mb-4 md:mb-8">
                 {/* Logo */}
                 <div className="border-2 border-brand-gold w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
                     <span className="font-pixel text-xl md:text-2xl font-bold text-brand-gold">K</span>
@@ -77,7 +77,7 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                 {/* Talk CTA */}
                 <a
                     href="#contact"
-                    className="hidden md:flex items-center gap-2 px-4 py-1.5 border border-white/20 hover:border-brand-gold hover:text-brand-gold transition-all duration-300 text-[10px] font-bold tracking-[0.2em] font-mono group"
+                    className="flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-brand-gold hover:text-brand-gold transition-all duration-300 text-xs font-bold tracking-[0.2em] font-mono group"
                 >
                     TALK
                     <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -91,14 +91,14 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full mb-2">
 
                     {/* Left Column: Name & Intro & What I Do */}
-                    <div className="md:col-span-3 flex flex-col gap-8">
+                    <div className="md:col-span-3 flex flex-col gap-4 md:gap-8">
                         <div>
-                            <h1 className="font-pixel text-3xl md:text-4xl lg:text-5xl mb-4 leading-tight tracking-wide">
+                            <h1 className="font-pixel text-4xl md:text-4xl lg:text-5xl mb-2 md:mb-4 leading-tight tracking-wide">
                                 KRISHNA<br />SINGH
                             </h1>
-                            <div className="relative pl-6 border-l border-white/30 hidden md:block mt-2">
+                            <div className="relative pl-6 border-l border-white/30 block mt-2">
                                 <ArrowUpRight className="absolute -left-3 top-0 w-6 h-6 bg-black text-white p-1" />
-                                <p className="text-[10px] md:text-xs text-gray-400 mt-2 font-mono leading-relaxed max-w-[200px]">
+                                <p className="text-xs text-gray-400 mt-2 font-mono leading-relaxed max-w-[200px]">
                                     Building intelligent agents<br />
                                     & real-world systems.
                                 </p>
@@ -106,9 +106,9 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                         </div>
 
                         {/* What I Do - Moved here */}
-                        <div className="hidden md:block">
-                            <h3 className="font-mono text-brand-gold text-[10px] mb-2 uppercase tracking-widest">What I do</h3>
-                            <p className="text-xs md:text-sm font-mono text-gray-300 leading-relaxed">
+                        <div className="block">
+                            <h3 className="font-mono text-brand-gold text-xs mb-2 uppercase tracking-widest">What I do</h3>
+                            <p className="text-sm font-mono text-gray-300 leading-relaxed">
                                 Software. Hardware. AI.
                             </p>
                         </div>
@@ -122,10 +122,10 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                     </div>
 
                     {/* Right Column: CAPABILITIES & Vinyl Record */}
-                    <div className="md:col-span-3 md:text-left hidden md:flex flex-col justify-between h-full pl-[30px]">
+                    <div className="md:col-span-3 md:text-left flex flex-col justify-between h-full md:pl-[30px] gap-8 md:gap-0 mt-4 md:mt-0">
                         <div>
-                            <h3 className="font-mono text-brand-gold text-[10px] mb-4 uppercase tracking-widest">CAPABILITIES</h3>
-                            <ul className="space-y-1.5 text-xs md:text-sm font-mono text-gray-300">
+                            <h3 className="font-mono text-brand-gold text-xs mb-4 uppercase tracking-widest">CAPABILITIES</h3>
+                            <ul className="grid grid-cols-2 md:grid-cols-1 gap-1 md:gap-1.5 text-xs md:text-sm font-mono text-gray-300">
                                 <li className="hover:text-white cursor-pointer transition-colors">AI Systems</li>
                                 <li className="hover:text-white cursor-pointer transition-colors">Cyber Security</li>
                                 <li className="hover:text-white cursor-pointer transition-colors">Embedded Hardware</li>
@@ -136,7 +136,7 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                         </div>
 
                         {/* Vinyl Record (Rotating) - Click to toggle music */}
-                        <div className="flex justify-end items-end mt-auto hover:scale-110 transition-transform duration-300 -mb-4 -mr-4 translate-x-[-80px] translate-y-[50px]">
+                        <div className="flex justify-end items-end mt-auto hover:scale-110 transition-transform duration-300 md:-mb-4 md:-mr-4 md:translate-x-[-80px] md:translate-y-[50px]">
                             <div
                                 id="hero-vinyl"
                                 onClick={toggleAudio}
@@ -222,7 +222,7 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                 </div>
 
 
-                <span className="ml-4 self-center hidden md:inline-block text-gray-500">AI • Security • Hardware • Systems Engineering</span>
+                <span className="md:ml-4 self-center inline-block text-[8px] md:text-xs text-gray-500 mt-2 md:mt-0">AI • Security • Hardware • Systems Engineering</span>
             </footer>
 
             {/* Hero Bottom Divider */}
