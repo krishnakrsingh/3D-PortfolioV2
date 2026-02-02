@@ -5,8 +5,7 @@ My personal portfolio website.
 Built to showcase the projects I’ve shipped — hardware, security tools, AI agents, and full-stack systems.
 
 If you're forking this or using it as a base, here’s everything you need to customize it fast.
-
----
+<img width="2519" height="1267" alt="Screenshot 2026-02-02 234637" src="https://github.com/user-attachments/assets/3ba6a547-ada7-45b8-b2cb-3ae1d7e683ba" />
 
 ## Design & Customization (The Important Stuff)
 
