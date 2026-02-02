@@ -22,7 +22,7 @@ const data = [
         title: "Autonomous Agents",
         src: "/assets/autonomous_agents.png",
         content: (
-            <div className="bg-neutral-900/50 border border-white/10 p-8 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
+            <div className="bg-neutral-900/50 border border-white/10 p-4 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
                 <p className="text-neutral-400 text-base md:text-2xl font-mono max-w-3xl mx-auto">
                     <span className="font-bold text-white font-display">
                         LLM systems that think and act independently.
@@ -42,7 +42,7 @@ const data = [
         title: "Cyber Offense",
         src: "/assets/cyber_offense.png",
         content: (
-            <div className="bg-neutral-900/50 border border-white/10 p-8 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
+            <div className="bg-neutral-900/50 border border-white/10 p-4 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
                 <p className="text-neutral-400 text-base md:text-2xl font-mono max-w-3xl mx-auto">
                     <span className="font-bold text-white font-display">
                         Pentesting tools, exploits, hardened defenses.
@@ -62,7 +62,7 @@ const data = [
         title: "Human × Machine Hardware",
         src: "/assets/human_machine.png",
         content: (
-            <div className="bg-neutral-900/50 border border-white/10 p-8 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
+            <div className="bg-neutral-900/50 border border-white/10 p-4 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
                 <p className="text-neutral-400 text-base md:text-2xl font-mono max-w-3xl mx-auto">
                     <span className="font-bold text-white font-display">
                         Bionics, sensors, embedded intelligence.
@@ -82,7 +82,7 @@ const data = [
         title: "Rapid Prototyping",
         src: "/assets/rapid_labs.jpg",
         content: (
-            <div className="bg-neutral-900/50 border border-white/10 p-8 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
+            <div className="bg-neutral-900/50 border border-white/10 p-4 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
                 <p className="text-neutral-400 text-base md:text-2xl font-mono max-w-3xl mx-auto">
                     <span className="font-bold text-white font-display">
                         Ideas shipped before others start planning.
@@ -102,7 +102,7 @@ const data = [
         title: "Full-Stack Infrastructure",
         src: "/assets/fullstack.png",
         content: (
-            <div className="bg-neutral-900/50 border border-white/10 p-8 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
+            <div className="bg-neutral-900/50 border border-white/10 p-4 md:p-14 rounded-3xl mb-4 backdrop-blur-md">
                 <p className="text-neutral-400 text-base md:text-2xl font-mono max-w-3xl mx-auto">
                     <span className="font-bold text-white font-display">
                         Scalable apps, APIs, real-time systems.
