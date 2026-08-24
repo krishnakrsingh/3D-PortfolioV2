@@ -1,0 +1,40 @@
+# Krishna Kr Singh
+
+> Engineer & Technologist building autonomous AI agents, cybersecurity tools, embedded hardware, bionics, and full-stack systems.
+
+## Summary & Identity
+- **Full Name**: Krishna Kr Singh (Krishna Kumar Singh)
+- **Known As**: Krishna Kr Singh, Krishna Singh, krishnakrsingh, krishx
+- **Role**: AI Systems Engineer, Cybersecurity Researcher, Hardware & Bionics Developer
+- **Location**: India
+- **Primary Website**: https://www.krishnakr.com/
+- **Education**: B.Tech in Cyber Security at K.R. Mangalam University (2024–Present); Schooling at St. Paul's School (Graduated 2024).
+- **Core Mantra**: "Outwork. Outbuild. Outlast. Average never interested me — I just build better."
+
+## Official Accounts & Verified Profiles
+- **Portfolio Website**: https://www.krishnakr.com/
+- **GitHub**: https://github.com/krishnakrsingh/
+- **LinkedIn**: https://www.linkedin.com/in/krishnakrsingh/
+- **TryHackMe**: https://tryhackme.com/p/krishnakrsingh
+- **LeetCode**: https://leetcode.com/u/krishnakrsinghh/
+- **Email Contact**: mailto:krishnakr2432007@gmail.com / mailto:mail@krishx.me
+
+## Core Capabilities & Specializations
+1. **Autonomous AI Systems**: LLM agents with multi-step reasoning, dynamic memory graphs, tool-calling pipelines, adaptive prompting engines, and autonomous execution.
+2. **Cybersecurity & Offensive Security**: Red-teaming, wireless reconnaissance, Wi-Fi packet injection, exploit simulation, vulnerability research, network analysis, and hardened defenses.
+3. **Human × Machine Hardware & Bionics**: EMG-controlled neural-signal driven bionic prosthetics, micro-controller firmware (ESP32, STM32, Arduino), custom PCB design, and sensor fusion.
+4. **Edge Intelligence & AR/XR**: Lightweight augmented reality smart glasses prototypes (XR-01), on-device edge computing, computer vision, and wearable interfaces.
+5. **Full-Stack Engineering & Rapid Prototyping**: Production velocity frameworks, Next.js, React, TypeScript, Node.js, distributed APIs, and scalable real-time architectures shipped from idea to deployment in 48 hours.
+
+## Featured Projects
+
+- [XBionics](https://www.krishnakr.com/#work): EMG-Controlled Neural Bionic Arm translating biological muscle impulses into mechanical articulation via real-time signal processing and custom embedded PCB controllers.
+- [BlackESP](https://www.krishnakr.com/#work): Portable offensive pentesting device built on ESP32 microcontrollers for wireless reconnaissance, 802.11 packet injection, and field red-team operations.
+- [FinalRound](https://www.krishnakr.com/#work): Voice-based AI interview simulation system utilizing LLM-driven conversations, dynamic memory graphs, and adaptive prompting for real-time interview coaching.
+- [XR-01](https://www.krishnakr.com/#work): Experimental lightweight augmented reality glasses with on-device edge intelligence, multi-sensor fusion, and computer vision overlays.
+- [Rapid Prototyping Framework](https://www.krishnakr.com/#work): High-velocity engineering stack and reusable architecture for building and deploying functional full-stack products within 48 hours.
+
+## Detailed Information & Full Documentation
+- For exhaustive architectural breakdowns, technical specs, and complete biography: see [llms-full.txt](https://www.krishnakr.com/llms-full.txt)
+- Machine-readable structured profile: [about.json](https://www.krishnakr.com/about.json)
+- RSS Feed: [feed.xml](https://www.krishnakr.com/feed.xml)

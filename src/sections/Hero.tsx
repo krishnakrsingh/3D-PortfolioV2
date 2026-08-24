@@ -62,10 +62,12 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
     };
 
     return (
-        <section id="home" aria-labelledby="hero-heading" className="relative h-dvh w-full bg-transparent text-white p-4 md:p-6 flex flex-col justify-between overflow-hidden">
-
-            {/* Background Noise/Grid (Optional) */}
-
+        <section id="home" aria-labelledby="hero-heading" itemScope itemType="https://schema.org/Person" className="relative h-dvh w-full bg-transparent text-white p-4 md:p-6 flex flex-col justify-between overflow-hidden">
+            <meta itemProp="name" content="Krishna Kr Singh" />
+            <meta itemProp="alternateName" content="Krishna Kumar Singh" />
+            <meta itemProp="jobTitle" content="Engineer and Technologist" />
+            <link itemProp="url" href="https://www.krishnakr.com/" />
+            <link itemProp="image" href="https://www.krishnakr.com/assets/og-image.png" />
 
             {/* Header / Nav */}
             <header className="relative z-10 flex justify-between items-end w-full shrink-0 mb-4 md:mb-8">
@@ -96,19 +98,19 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                     {/* Left Column: Name & Intro & What I Do */}
                     <div className="md:col-span-3 flex flex-col gap-4 md:gap-8">
                         <div>
-                            <h1 id="hero-heading" className="font-pixel text-4xl md:text-4xl lg:text-5xl mb-2 md:mb-4 leading-tight tracking-wide">
+                            <h1 id="hero-heading" itemProp="name" className="font-pixel text-4xl md:text-4xl lg:text-5xl mb-2 md:mb-4 leading-tight tracking-wide">
                                 KRISHNA<br />KR SINGH
                             </h1>
                             <div className="relative pl-6 border-l border-white/30 block mt-2">
                                 <ArrowUpRight className="absolute -left-3 top-0 w-6 h-6 bg-black text-white p-1" />
-                                <p className="text-xs text-gray-400 mt-2 font-mono leading-relaxed max-w-[200px]">
+                                <p itemProp="description" className="text-xs text-gray-400 mt-2 font-mono leading-relaxed max-w-[200px]">
                                     Building intelligent agents<br />
                                     &amp; real-world systems.
                                 </p>
                             </div>
                         </div>
 
-                        {/* What I Do - Moved here */}
+                        {/* What I Do */}
                         <div className="block">
                             <h3 className="font-mono text-brand-gold text-xs mb-2 uppercase tracking-widest">What I do</h3>
                             <p className="text-sm font-mono text-gray-300 leading-relaxed">
@@ -120,7 +122,7 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                     {/* Center Column: Design & Eng Only */}
                     <div className="md:col-span-6 flex flex-col h-full">
                         <h2 className="font-pixel text-2xl md:text-3xl lg:text-4xl uppercase tracking-wide">
-                            Design &<br />Engineering
+                            Design &amp;<br />Engineering
                         </h2>
                     </div>
 
@@ -129,12 +131,12 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                         <div>
                             <h3 className="font-mono text-brand-gold text-xs mb-4 uppercase tracking-widest">CAPABILITIES</h3>
                             <ul className="grid grid-cols-2 md:grid-cols-1 gap-1 md:gap-1.5 text-xs md:text-sm font-mono text-gray-300">
-                                <li className="hover:text-white cursor-pointer transition-colors">AI Systems</li>
-                                <li className="hover:text-white cursor-pointer transition-colors">Cyber Security</li>
-                                <li className="hover:text-white cursor-pointer transition-colors">Embedded Hardware</li>
-                                <li className="hover:text-white cursor-pointer transition-colors">Full-Stack Engineering</li>
-                                <li className="hover:text-white cursor-pointer transition-colors">Automation</li>
-                                <li className="hover:text-white cursor-pointer transition-colors">Research & Prototyping</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">AI Systems</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">Cyber Security</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">Embedded Hardware</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">Full-Stack Engineering</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">Automation</li>
+                                <li itemProp="knowsAbout" className="hover:text-white cursor-pointer transition-colors">Research &amp; Prototyping</li>
                             </ul>
                         </div>
 
@@ -191,7 +193,6 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
 
                                     </div>
 
-
                                 </div>
                             </div>
                         </div>
@@ -224,7 +225,6 @@ export function Hero({ isLoading }: { isLoading?: boolean }) {
                         <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </a>
                 </div>
-
 
                 <span className="md:ml-4 self-center inline-block text-[8px] md:text-xs text-gray-500 mt-2 md:mt-0">AI • Security • Hardware • Systems Engineering</span>
             </footer>

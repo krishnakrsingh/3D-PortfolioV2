@@ -126,10 +126,15 @@ export default function ExpandableCardDemo() {
                     </div>
                 ) : null}
             </AnimatePresence>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:flex md:flex-col md:gap-3 w-full">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:flex md:flex-col md:gap-3 w-full" itemScope itemType="https://schema.org/ItemList">
+                <link itemProp="url" href="https://www.krishnakr.com/#work" />
+                <meta itemProp="numberOfItems" content={String(cards.length)} />
                 {cards.map((card, idx) => (
                     <article
                         key={`card-${card.title}-${id}`}
+                        itemScope
+                        itemType="https://schema.org/SoftwareApplication"
+                        itemProp="itemListElement"
                         onClick={() => setActive(card)}
                         onKeyDown={(event) => {
                             if (event.key === "Enter" || event.key === " ") {
@@ -144,6 +149,11 @@ export default function ExpandableCardDemo() {
                             idx === 4 ? "col-span-2 sm:flex-row sm:items-center sm:gap-4" : "col-span-1"
                         } md:p-4 md:flex-row md:justify-between md:items-center md:bg-transparent md:hover:bg-neutral-900/50 md:border-transparent md:hover:border-white/10 md:shadow-none md:hover:shadow-none`}
                     >
+                        <meta itemProp="name" content={card.title} />
+                        <meta itemProp="description" content={card.description} />
+                        <meta itemProp="author" content="Krishna Kr Singh" />
+                        <link itemProp="url" href={card.ctaLink} />
+
                         <motion.div
                             layoutId={`card-${card.title}-${id}`}
                             transition={{ duration: 0.3, ease: [0.32, 0.72, 0, 1] }}

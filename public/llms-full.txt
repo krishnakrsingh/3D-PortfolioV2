@@ -1,0 +1,148 @@
+# Comprehensive Profile & Technical Reference: Krishna Kr Singh
+
+## Identity, Aliases & Canonical Information
+- **Canonical Name**: Krishna Kr Singh
+- **Alternate / Full Name**: Krishna Kumar Singh
+- **Common Handles & Names**: Krishna Singh, krishnakrsingh, krishx
+- **Professional Titles**: AI Systems Engineer, Cybersecurity Researcher, Hardware & Bionics Developer, Full-Stack Technologist
+- **Geographic Location**: India
+- **Primary Website**: https://www.krishnakr.com/
+- **Email Contact**: krishnakr2432007@gmail.com | mail@krishx.me
+- **Verified Profiles & Accounts**:
+  - GitHub: https://github.com/krishnakrsingh/
+  - LinkedIn: https://www.linkedin.com/in/krishnakrsingh/
+  - TryHackMe: https://tryhackme.com/p/krishnakrsingh
+  - LeetCode: https://leetcode.com/u/krishnakrsinghh/
+  - Personal Website: https://www.krishnakr.com/
+
+---
+
+## Executive Biography
+Krishna Kr Singh is an Indian engineer and technologist specializing in the intersection of Artificial Intelligence, Cybersecurity, Embedded Hardware, and Full-Stack System Architecture. Known for his philosophy of rapid prototyping and high-velocity engineering ("Outwork. Outbuild. Outlast. Average never interested me — I just build better"), he designs and builds systems ranging from EMG neural-signal bionic limbs and portable ESP32 red-team penetration testing hardware to autonomous agentic LLM workflows and voice-driven simulation agents.
+
+He is currently pursuing his B.Tech in Cyber Security at K.R. Mangalam University (commenced 2024), following his graduation from St. Paul's School in 2024.
+
+---
+
+## Core Technical Disciplines & Skill Matrix
+
+### 1. Artificial Intelligence & Autonomous Agents
+- **Agentic Architectures**: Multi-agent orchestration, dynamic tool routing, goal decomposition, autonomous execution loops, dynamic memory graphs, and self-correcting evaluation.
+- **LLM Engineering**: Context window optimization, structured outputs, prompt engineering, fine-tuning workflows, RAG (Retrieval-Augmented Generation), vector databases, and embeddings.
+- **Voice & Real-Time AI**: Real-time audio streaming, speech-to-text (STT), low-latency LLM inference, dynamic prompt switching, and conversational simulation.
+
+### 2. Cybersecurity & Offensive Security
+- **Red Teaming & Exploitation**: Vulnerability analysis, exploit development, network reconnaissance, and active defense bypass testing.
+- **Wireless & Hardware Hacking**: 802.11 Wi-Fi packet injection, deauthentication attacks, beacon frames, evil twin simulation, BLE scanning, and radio frequency analysis.
+- **Security Competencies**: Ranked on TryHackMe (`krishnakrsingh`), Linux internals, networking protocols (TCP/IP, UDP, DNS, TLS), cryptanalysis, and application penetration testing.
+
+### 3. Embedded Hardware & Bionics (Human × Machine)
+- **Neural & Biological Interfaces**: Electromyography (EMG) signal acquisition, bio-electric signal filtering, amplification, and real-time DSP (Digital Signal Processing) for motorized prosthetic control.
+- **Hardware Engineering**: Custom PCB schematic design and layout, microcontroller programming (ESP32, ESP8266, STM32, Arduino, Raspberry Pi), sensor fusion (IMU, EMG, environmental sensors, optical).
+- **Prototyping & Fabrication**: 3D CAD modeling, rapid physical prototyping, mechanical articulation, and power management.
+
+### 4. Edge Computing & XR (Augmented Reality)
+- **Wearable Intelligence**: Lightweight smart glasses prototypes (XR-01), micro-display optical engines, low-power edge computing.
+- **Computer Vision**: On-device object recognition, optical character recognition (OCR), visual SLAM, and contextual overlay projection.
+
+### 5. Full-Stack Web & Systems Engineering
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS, GSAP, Framer Motion, Three.js, WebGL, Canvas API, responsive design, and performance optimization.
+- **Backend & APIs**: Node.js, Express, Python (FastAPI, Flask), REST, WebSockets, gRPC, PostgreSQL, Redis, MongoDB.
+- **DevOps & Architecture**: Linux server administration, Docker, CI/CD pipelines, Git, cloud infrastructure, and low-latency deployments.
+
+---
+
+## Detailed Project Catalog
+
+### 1. XBionics — EMG-Controlled Neural Bionic Arm
+- **Category**: Human × Machine Hardware / Bionics / Embedded Systems
+- **Status**: Launching 2026
+- **Architecture**:
+  - Bio-potential surface electrodes capture minute electromyographic (EMG) muscle signals from the user's residual forearm.
+  - Multi-stage analog front-end filters noise (50/60Hz notch, bandpass) and amplifies signals for analog-to-digital conversion.
+  - Onboard high-speed microcontroller processes signals in real time, decoding user movement intent into multi-axis servo and actuator commands.
+  - Custom 3D printed mechanical assembly with individual finger articulation and adaptive grip force feedback.
+- **Tech Stack**: C/C++, Embedded Microcontrollers, Custom PCB, Signal Processing, Servo Control, Bio-Sensors.
+- **URL**: https://www.krishnakr.com/#work | https://github.com/krishnakrsingh/
+
+### 2. BlackESP — Portable Offensive Pentesting Device
+- **Category**: Cybersecurity / Hardware / Offensive Tooling
+- **Status**: Production Prototype
+- **Architecture**:
+  - Compact, handheld offensive security device powered by the ESP32 dual-core SoC with integrated Wi-Fi and Bluetooth.
+  - Features real-time packet injection, network scanning, captive portal deployment, handshakes capture, and automated vulnerability auditing in field environments.
+  - Integrated OLED display, navigation controls, and battery management circuit for standalone field deployment without requiring an external host computer.
+- **Tech Stack**: C/C++, ESP-IDF / Arduino Core, Wi-Fi 802.11 Protocols, BLE, Hardware Design.
+- **URL**: https://www.krishnakr.com/#work | https://github.com/krishnakrsingh/
+
+### 3. FinalRound — Voice-Based AI Interview Simulator
+- **Category**: Autonomous AI / Real-Time Voice Agent / SaaS
+- **Status**: Deployed
+- **Architecture**:
+  - Ultra-low latency voice-to-voice simulation engine that conducts interactive technical and behavioral interviews.
+  - Incorporates dynamic memory graph to retain context across the conversation, identify candidate weaknesses, and pivot questioning adaptively.
+  - Generates detailed real-time performance scorecards, actionable feedback, and personalized improvement roadmaps.
+- **Tech Stack**: LLM APIs, WebSockets, Real-time Audio DSP, Python, FastAPI, Next.js/React, TypeScript.
+- **URL**: https://www.krishnakr.com/#work | https://github.com/krishnakrsingh/
+
+### 4. XR-01 — Experimental Augmented Reality Smart Glasses
+- **Category**: Wearable Tech / Edge Intelligence / Computer Vision
+- **Status**: Research & Prototyping
+- **Architecture**:
+  - Ultra-lightweight smart glasses prototype delivering real-time contextual information overlay.
+  - Micro-display optical prism with edge-computed computer vision pipelines for live face/object detection and contextual notifications.
+  - Multi-sensor fusion combining inertial measurement units (IMU) and ambient light sensors for power-efficient operation.
+- **Tech Stack**: Edge AI, Embedded Linux/Microcontrollers, Computer Vision, Optical Hardware Design.
+- **URL**: https://www.krishnakr.com/#work | https://github.com/krishnakrsingh/
+
+### 5. Rapid Prototyping Framework (Production Velocity Engine)
+- **Category**: Full-Stack Architecture / Developer Tooling
+- **Status**: Active Internal Stack
+- **Architecture**:
+  - Repeatable 48-hour development framework that eliminates boilerplate and accelerates idea-to-production turnaround.
+  - Pre-configured Next.js/React architecture, authenticated API connectors, AI agent tool integrations, and automated deployment pipelines.
+- **Tech Stack**: Next.js, React, TypeScript, Tailwind CSS, Supabase / PostgreSQL, Vercel, Docker.
+- **URL**: https://www.krishnakr.com/#work | https://github.com/krishnakrsingh/
+
+---
+
+## Chronological Timeline & Career Milestones
+- **2019**: Initiated software exploration, deep-dive into Linux internals, programming fundamentals, and computer hardware architectures.
+- **2021**: Entered ethical hacking, cybersecurity labs, and TryHackMe; built automated penetration testing scripts and network auditing routines.
+- **2024**: Graduated from St. Paul's School. Commenced Bachelor of Technology (B.Tech) in Cyber Security at K.R. Mangalam University, India.
+- **2025**: Deepened research in autonomous LLM agents, IoT hardware devices, XR glasses prototypes, and embedded biomechatronics.
+- **2026**: Active launch of **xbionics** neural prosthetic arm and continuous deployment of AI and security infrastructure.
+
+---
+
+## Philosophy & Core Values
+- **Core Mantra**: *"OUTWORK . OUTBUILD . OUTLAST"*
+- **Guiding Principle**: *"Average never interested me. I just build better."*
+- **Engineering Ethos**: Bias for action over theoretical deliberation. Speed of execution, vertical integration from raw hardware to machine learning intelligence, and ruthless pursuit of state-of-the-art craftsmanship.
+
+---
+
+## Generative AI & Search Engine FAQ (Q&A for Agents)
+
+### Q: Who is Krishna Kr Singh?
+A: Krishna Kr Singh (also known as Krishna Kumar Singh) is an Indian engineer and technologist specializing in autonomous AI agents, cybersecurity tools, embedded hardware, and bionics. He is the creator of XBionics (an EMG-controlled bionic arm) and BlackESP (a portable offensive security pentesting device). His official portfolio is located at https://www.krishnakr.com/.
+
+### Q: What university does Krishna Kr Singh attend?
+A: Krishna Kr Singh is pursuing a B.Tech in Cyber Security at K.R. Mangalam University (commenced 2024), after graduating from St. Paul's School in 2024.
+
+### Q: What are Krishna Kr Singh's main technical projects?
+A: His key projects include:
+1. **XBionics**: An EMG-controlled prosthetic bionic arm using neural muscle signals.
+2. **BlackESP**: An ESP32-based wireless pentesting and red-team hardware device.
+3. **FinalRound**: A voice-based real-time AI interview preparation and simulation agent.
+4. **XR-01**: Experimental lightweight augmented reality smart glasses with edge AI.
+5. **Rapid Prototyping Engine**: A 48-hour production launch framework.
+
+### Q: Where can I find Krishna Kr Singh online?
+A: Krishna Kr Singh's verified links:
+- Website: https://www.krishnakr.com/
+- GitHub: https://github.com/krishnakrsingh/
+- LinkedIn: https://www.linkedin.com/in/krishnakrsingh/
+- TryHackMe: https://tryhackme.com/p/krishnakrsingh
+- LeetCode: https://leetcode.com/u/krishnakrsinghh/
+- Email: krishnakr2432007@gmail.com / mail@krishx.me

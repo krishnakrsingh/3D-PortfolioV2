@@ -1,4 +1,75 @@
+# AI Agents & Search Engine Crawlers Policy for Krishna Kr Singh Portfolio
+# https://www.krishnakr.com/
+
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /about.json
+Allow: /feed.xml
+Allow: /sitemap.xml
+Allow: /.well-known/security.txt
+Allow: /.well-known/ai-agent.json
 
+# OpenAI Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude Agents
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google Search & Gemini / AI Overviews
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl & Open AI Training Crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# Canonical Sitemaps and AI Entrypoints
 Sitemap: https://www.krishnakr.com/sitemap.xml
+# LLM context entrypoint: https://www.krishnakr.com/llms.txt
+# Comprehensive LLM documentation: https://www.krishnakr.com/llms-full.txt
+# Machine-readable profile: https://www.krishnakr.com/about.json

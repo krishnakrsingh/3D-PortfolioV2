@@ -75,6 +75,8 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
+      itemScope
+      itemType="https://schema.org/ContactPage"
       ref={sectionRef}
       className="relative w-full bg-transparent flex flex-col overflow-hidden"
     >

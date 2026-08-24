@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Krishna Kr Singh — Projects &amp; Systems Engineering</title>
+    <link>https://www.krishnakr.com/</link>
+    <description>Engineering portfolio, updates, and research projects by Krishna Kr Singh covering AI agents, cybersecurity tools, bionics, and full-stack systems.</description>
+    <language>en-in</language>
+    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.krishnakr.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>XBionics: EMG-Controlled Bionic Arm</title>
+      <link>https://www.krishnakr.com/#work</link>
+      <guid>https://www.krishnakr.com/#xbionics</guid>
+      <pubDate>Mon, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Neural-signal driven prosthetic translating biological muscle impulses into mechanical motion with custom embedded PCB and real-time DSP.</description>
+    </item>
+
+    <item>
+      <title>BlackESP: Portable Offensive Pentesting Device</title>
+      <link>https://www.krishnakr.com/#work</link>
+      <guid>https://www.krishnakr.com/#blackesp</guid>
+      <pubDate>Tue, 15 Oct 2025 00:00:00 GMT</pubDate>
+      <description>ESP32-based wireless offensive security toolkit for Wi-Fi reconnaissance, packet injection, and field red-team operations.</description>
+    </item>
+
+    <item>
+      <title>FinalRound: Voice-Based AI Interview Prep Agent</title>
+      <link>https://www.krishnakr.com/#work</link>
+      <guid>https://www.krishnakr.com/#finalround</guid>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Interactive voice AI interview simulation system utilizing LLMs, dynamic memory graphs, and adaptive prompting.</description>
+    </item>
+
+    <item>
+      <title>XR-01: Experimental Edge Intelligence AR Smart Glasses</title>
+      <link>https://www.krishnakr.com/#work</link>
+      <guid>https://www.krishnakr.com/#xr01</guid>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Lightweight augmented reality smart glasses combining on-device computer vision with micro-displays and multi-sensor fusion.</description>
+    </item>
+
+    <item>
+      <title>Rapid Prototyping: 48-Hour Production Framework</title>
+      <link>https://www.krishnakr.com/#work</link>
+      <guid>https://www.krishnakr.com/#rapid-prototyping</guid>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+      <description>High-velocity engineering stack and reusable architecture for going from concept to live production in a weekend.</description>
+    </item>
+  </channel>
+</rss>

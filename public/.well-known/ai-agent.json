@@ -1,0 +1,15 @@
+{
+  "name": "Krishna Kr Singh Portfolio & Agent Index",
+  "description": "Official AI index for Krishna Kr Singh - AI systems, cybersecurity tools, bionics, and full-stack engineering.",
+  "url": "https://www.krishnakr.com/",
+  "author": "Krishna Kr Singh",
+  "llms_txt": "https://www.krishnakr.com/llms.txt",
+  "llms_full_txt": "https://www.krishnakr.com/llms-full.txt",
+  "schema_json": "https://www.krishnakr.com/about.json",
+  "verified_profiles": {
+    "github": "https://github.com/krishnakrsingh/",
+    "linkedin": "https://www.linkedin.com/in/krishnakrsingh/",
+    "tryhackme": "https://tryhackme.com/p/krishnakrsingh",
+    "leetcode": "https://leetcode.com/u/krishnakrsinghh/"
+  }
+}

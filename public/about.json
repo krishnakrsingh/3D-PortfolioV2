@@ -1,0 +1,91 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Krishna Kr Singh",
+  "alternateName": [
+    "Krishna Kumar Singh",
+    "Krishna Singh",
+    "krishnakrsingh",
+    "krishx"
+  ],
+  "identifier": "krishnakrsingh",
+  "url": "https://www.krishnakr.com/",
+  "jobTitle": "Engineer and Technologist",
+  "description": "Krishna Kr Singh is an engineer and technologist building autonomous AI agents, cybersecurity tools, embedded hardware, bionics, and full-stack systems.",
+  "email": "mailto:krishnakr2432007@gmail.com",
+  "nationality": "Indian",
+  "gender": "Male",
+  "image": "https://www.krishnakr.com/assets/og-image.png",
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "K.R. Mangalam University",
+      "department": "Department of Cyber Security",
+      "award": "B.Tech in Cyber Security"
+    },
+    {
+      "@type": "School",
+      "name": "St. Paul's School"
+    }
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Autonomous LLM Agents",
+    "Cybersecurity",
+    "Offensive Security & Red Teaming",
+    "Embedded Hardware & IoT",
+    "ESP32 & STM32 Development",
+    "Electromyography (EMG) Bionic Systems",
+    "Full-Stack Web Development",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Python",
+    "C/C++",
+    "Rapid Prototyping",
+    "Computer Vision",
+    "Augmented Reality (AR/XR)"
+  ],
+  "sameAs": [
+    "https://github.com/krishnakrsingh/",
+    "https://www.linkedin.com/in/krishnakrsingh/",
+    "https://tryhackme.com/p/krishnakrsingh",
+    "https://leetcode.com/u/krishnakrsinghh/"
+  ],
+  "projects": [
+    {
+      "name": "XBionics",
+      "description": "EMG-Controlled Neural Bionic Arm translating muscle impulses into precise mechanical motion.",
+      "category": "Bionics & Embedded Hardware",
+      "url": "https://www.krishnakr.com/#work"
+    },
+    {
+      "name": "BlackESP",
+      "description": "ESP32-based portable offensive security toolkit for wireless reconnaissance and exploit testing.",
+      "category": "Cybersecurity & Hardware",
+      "url": "https://www.krishnakr.com/#work"
+    },
+    {
+      "name": "FinalRound",
+      "description": "Voice-based AI interview simulation system utilizing LLM-driven conversations and dynamic memory graphs.",
+      "category": "Autonomous AI & Voice SaaS",
+      "url": "https://www.krishnakr.com/#work"
+    },
+    {
+      "name": "XR-01",
+      "description": "Lightweight experimental smart glasses for contextual overlays and edge intelligence.",
+      "category": "Edge AI & Wearables",
+      "url": "https://www.krishnakr.com/#work"
+    },
+    {
+      "name": "Rapid Prototyping Framework",
+      "description": "48-hour launch framework for deploying full-stack systems from scratch at high velocity.",
+      "category": "Developer Tooling & Infrastructure",
+      "url": "https://www.krishnakr.com/#work"
+    }
+  ],
+  "aiDocumentation": {
+    "llms": "https://www.krishnakr.com/llms.txt",
+    "llmsFull": "https://www.krishnakr.com/llms-full.txt"
+  }
+}

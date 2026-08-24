@@ -1,0 +1,9 @@
+# Security Contact for Krishna Kr Singh
+# https://www.krishnakr.com/.well-known/security.txt
+
+Contact: mailto:krishnakr2432007@gmail.com
+Contact: mailto:mail@krishx.me
+Preferred-Languages: en, hi
+Canonical: https://www.krishnakr.com/.well-known/security.txt
+Policy: https://www.krishnakr.com/
+Expires: 2027-12-31T23:59:59.000Z
