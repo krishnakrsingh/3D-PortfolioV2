@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Linkedin, Github, ShieldCheck, Code2 } from 'lucide-react';
-import GlobeDemo from '@/components/ui/globe-demo';
+import OptimizedBlackHole from '@/components/ui/optimized-black-hole';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,12 +78,17 @@ export function Contact() {
       itemScope
       itemType="https://schema.org/ContactPage"
       ref={sectionRef}
-      className="relative w-full bg-transparent flex flex-col overflow-hidden"
+      className="relative w-full bg-transparent flex flex-col justify-between overflow-hidden min-h-screen"
     >
-      <div className="flex-1 w-full px-4 md:px-8 lg:px-12 py-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+      {/* Full-Width Immersive Black Hole Canvas */}
+      <div className="absolute inset-0 w-full h-full pointer-events-auto z-0 overflow-hidden">
+        <OptimizedBlackHole />
+      </div>
+
+      <div className="relative z-10 flex-1 w-full px-4 md:px-8 lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 pointer-events-none">
 
         {/* Left: Content & Buttons */}
-        <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col gap-10 z-10">
+        <div ref={contentRef} className="w-full lg:w-1/2 flex flex-col gap-10 pointer-events-auto">
           <div>
             <h2 id="contact-heading" className="font-display text-5xl md:text-7xl lg:text-8xl text-white tracking-tighter leading-[0.9] mb-6">
               LET'S START <br />
@@ -103,7 +108,7 @@ export function Contact() {
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "me noopener noreferrer" : undefined}
                 aria-label={`${link.title}: ${link.username}`}
-                className="group flex-1 min-w-[140px] h-14 relative bg-black border border-white/20 rounded-full overflow-hidden transition-all duration-300 hover:border-transparent hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] flex items-center justify-center gap-3 px-6"
+                className="group flex-1 min-w-[140px] h-14 relative bg-black/80 backdrop-blur-md border border-white/20 rounded-full overflow-hidden transition-all duration-300 hover:border-transparent hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] flex items-center justify-center gap-3 px-6"
               >
                 {/* Fill Effect */}
                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
@@ -122,25 +127,19 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Right: Globe Interaction */}
-        <div className="w-full lg:w-1/2 h-[50vh] lg:h-[80vh] relative min-h-[400px]">
-          <div className="absolute inset-0 flex items-center justify-center opacity-80 mix-blend-screen pointer-events-none lg:pointer-events-auto">
-            <GlobeDemo />
-          </div>
-          {/* Gradient Overlay to blend globe edges */}
-          <div className="absolute inset-0 pointer-events-none bg-radial-gradient from-transparent via-transparent to-black/80" />
-        </div>
+        {/* Right side spacer for desktop layout */}
+        <div className="w-full lg:w-1/2 h-[40vh] lg:h-[70vh] pointer-events-none" />
 
       </div>
 
-      <footer className="w-full px-4 md:px-8 lg:px-12 py-8 border-t border-brand-gold/10 relative z-20 bg-black">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <span className="font-display text-2xl font-bold text-white">Krishna KR Singh</span>
-            <span className="text-white/40 text-sm">2026</span>
+      <footer className="w-full px-4 md:px-8 lg:px-12 py-3 border-t border-white/5 relative z-20 bg-transparent pointer-events-auto">
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="font-display text-sm md:text-base font-medium text-white/80">Krishna KR Singh</span>
+            <span className="text-white/30 text-xs font-mono">2026</span>
           </div>
 
-          <span className="font-mono text-xs text-white/40">INDIA</span>
+          <span className="font-mono text-xs text-white/30 tracking-wider">INDIA</span>
         </div>
       </footer>
     </section>
